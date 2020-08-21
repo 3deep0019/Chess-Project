@@ -124,7 +124,7 @@ function play() {
   input.forEach((num) => {
     let number = Number(num.slice(num.length - 1));
     let dir = num.slice(0, num.length - 1);
-    move(number, dir);
+    move(number, dir.toUpperCase());
   });
 
   //Consoling the current position of the queen
